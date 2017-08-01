@@ -15,6 +15,8 @@
 		7E876A291F3053F70071CECC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E876A271F3053F70071CECC /* LaunchScreen.storyboard */; };
 		7E876A341F3053F70071CECC /* ZDL_SQLiteTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E876A331F3053F70071CECC /* ZDL_SQLiteTests.m */; };
 		7E876A3F1F3053F70071CECC /* ZDL_SQLiteUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E876A3E1F3053F70071CECC /* ZDL_SQLiteUITests.m */; };
+		7E876A4E1F305BDC0071CECC /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E876A4D1F305BDC0071CECC /* libsqlite3.0.tbd */; };
+		7E876A511F305C790071CECC /* SQLiteManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E876A501F305C790071CECC /* SQLiteManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,9 @@
 		7E876A3A1F3053F70071CECC /* ZDL_SQLiteUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZDL_SQLiteUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E876A3E1F3053F70071CECC /* ZDL_SQLiteUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZDL_SQLiteUITests.m; sourceTree = "<group>"; };
 		7E876A401F3053F70071CECC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7E876A4D1F305BDC0071CECC /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
+		7E876A4F1F305C790071CECC /* SQLiteManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SQLiteManager.h; sourceTree = "<group>"; };
+		7E876A501F305C790071CECC /* SQLiteManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SQLiteManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7E876A4E1F305BDC0071CECC /* libsqlite3.0.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +91,7 @@
 				7E876A321F3053F70071CECC /* ZDL_SQLiteTests */,
 				7E876A3D1F3053F70071CECC /* ZDL_SQLiteUITests */,
 				7E876A171F3053F70071CECC /* Products */,
+				7E876A4C1F305BDC0071CECC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,6 +108,8 @@
 		7E876A181F3053F70071CECC /* ZDL_SQLite */ = {
 			isa = PBXGroup;
 			children = (
+				7E876A4F1F305C790071CECC /* SQLiteManager.h */,
+				7E876A501F305C790071CECC /* SQLiteManager.m */,
 				7E876A1C1F3053F70071CECC /* AppDelegate.h */,
 				7E876A1D1F3053F70071CECC /* AppDelegate.m */,
 				7E876A1F1F3053F70071CECC /* ViewController.h */,
@@ -138,6 +147,14 @@
 				7E876A401F3053F70071CECC /* Info.plist */,
 			);
 			path = ZDL_SQLiteUITests;
+			sourceTree = "<group>";
+		};
+		7E876A4C1F305BDC0071CECC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7E876A4D1F305BDC0071CECC /* libsqlite3.0.tbd */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -276,6 +293,7 @@
 				7E876A211F3053F70071CECC /* ViewController.m in Sources */,
 				7E876A1E1F3053F70071CECC /* AppDelegate.m in Sources */,
 				7E876A1B1F3053F70071CECC /* main.m in Sources */,
+				7E876A511F305C790071CECC /* SQLiteManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
